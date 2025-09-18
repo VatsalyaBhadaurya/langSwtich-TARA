@@ -1,0 +1,8 @@
+speechbrain>=0.5.16
+vosk>=0.3.45
+TTS>=0.22.0
+torch>=1.13.0
+torchaudio>=0.13.0
+numpy>=1.21.0
+soundfile>=0.12.1
+pyaudio>=0.2.11

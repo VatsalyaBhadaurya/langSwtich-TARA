@@ -1,0 +1,24 @@
+# Language Switch Configuration
+audio:
+  sample_rate: 16000
+  chunk_size: 4000
+  channels: 1
+  format: "pcm_s16le"
+
+models:
+  language_detection:
+    model_name: "speechbrain/lang-id-voxlingua107-ecapa"
+    confidence_threshold: 0.8
+  
+  speech_recognition:
+    model_path: "models/vosk"
+    languages: ["en", "hi", "es", "fr", "de", "it", "pt", "ru", "ja", "ko", "zh"]
+  
+  text_to_speech:
+    model_name: "tts_models/multilingual/multi-dataset/xtts_v2"
+    languages: ["en", "hi", "es", "fr", "de", "it", "pt", "ru", "ja", "ko", "zh"]
+
+processing:
+  real_time: true
+  buffer_size: 1024
+  max_audio_length: 30  # seconds
