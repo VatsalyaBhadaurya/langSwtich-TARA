@@ -1,0 +1,18 @@
+# Lightweight dependencies for Language Switch TARA
+# Core audio processing
+numpy>=1.21.0
+soundfile>=0.12.1
+pyaudio>=0.2.11
+pyyaml>=6.0
+
+# Optional: For basic TTS (if TTS fails)
+pyttsx3>=2.90
+
+# Optional: For language detection (if SpeechBrain fails)
+langdetect>=1.0.9
+
+# Optional: For Whisper ASR (alternative to Vosk)
+openai-whisper>=20231117
+
+# Optional: For basic speech recognition
+speech_recognition>=3.10.0
